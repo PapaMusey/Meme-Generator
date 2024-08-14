@@ -11,3 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  background: linear-gradient(to right, #672280, #A626D3);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.logo-and-name {
+  display: flex;
+}
+
+.headerimage {
+  height: 50px;
+  width: 60px;
+  margin-right: 6px;
+}
+
+.headertitle {
+  font-family: "Karla", sans-serif;
+  font-size: 20.75px;
+  font-weight: bold;
+  /* margin: auto; */
+}
+
+.headerproject {
+  font-family: "Karla", sans-serif;
+}
+
+.form-button {
+  background: linear-gradient(to right, #711F8D, #A818DA)
+}
+
+.form-input {
+  text-indent: 5px;
+}
+
+.formwrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  color: #A818DA;
+}
+.form-button{
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  height: 40px;
+  width: 477px;
+  cursor: pointer;
+}
+
+.formwrapper {
+  border-radius: 5px;
+}
+
+
