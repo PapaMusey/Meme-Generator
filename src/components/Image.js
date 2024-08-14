@@ -1,14 +1,14 @@
 import React from "react";
 
 export default function Image() {
-    function handleOnMouseOver() {
-      console.log("I am here");
-    }
+    // function getMemeImage() {
+    //   console.log("Clicked");
+    // }
   
     return (
       <div className="image-container" style={{ textAlign: "center", paddingTop: "50px" }}>
         <img
-        onMouseOver={handleOnMouseOver}
+        // onMouseOver={getMemeImage}
         src="/img/mrdynamic.png"
         alt="generated meme"
         className="meme-image"

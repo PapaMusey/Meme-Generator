@@ -1,12 +1,17 @@
 import React from "react";
+import memesData from "../components/memesData.json"
 
 export default function Meme() {
-    function handleClick() {
-        console.log("I was clicked")
+    function getMemeImage(event) {
+        event.preventDefault();
+        const memesArray = memesData
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        // console.log(randomNumber)
+        // console.log(memesArray[randomNumber])
+        const image =memesArray[randomNumber].image
+        console.log(image)
     }
-    function handleOnMouseOver() {
-        console.log("I am here")
-    }
+
     return (
         <main>
 
@@ -24,8 +29,8 @@ export default function Meme() {
                     </div>
                     <div className="button">
                         <button
-                            onClick={handleClick}
-                            onMouseOver={handleOnMouseOver}
+                            onClick={getMemeImage}
+                           
                             className="form-button">
                                 Get a new meme image
                         </button>
