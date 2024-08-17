@@ -8,7 +8,7 @@ export default function Meme() {
         const randomNumber = Math.floor(Math.random() * memesArray.length)
         // console.log(randomNumber)
         // console.log(memesArray[randomNumber])
-        const image =memesArray[randomNumber].image
+        const image = memesArray[randomNumber].image
         console.log(image)
     }
 

@@ -1,6 +1,8 @@
 // import React from "react";
 // import ReactDOM from "react-dom";
 
+
+//PRELUDE TO STATES
 // function App () {
 //     const thingsArray = ["Thing 1", "Thing 2"]
 //     const newthingsArray = thingsArray.map(thing => <p key={thing} >Show {thing} </p>)  
