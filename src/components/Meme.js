@@ -2,6 +2,9 @@ import React from "react";
 import memesData from "../components/memesData.json"
 
 export default function Meme() {
+    const [memeImage, setMemeImage] = React.useState("")
+
+
     function getMemeImage(event) {
         event.preventDefault();
         const memesArray = memesData
@@ -9,8 +12,11 @@ export default function Meme() {
         // console.log(randomNumber)
         // console.log(memesArray[randomNumber])
         const image = memesArray[randomNumber].image
-        console.log(image)
+        // console.log(image)
+        setMemeImage(image)
+
     }
+
 
     return (
         <main>
@@ -36,9 +42,15 @@ export default function Meme() {
                         </button>
                     </div>
                 </div>
-
             </form>
-
+            <div className="meme-image">
+            <img
+            src={memeImage}
+            alt="generated meme"
+            className="meme-image"
+            />
+            </div>
+            
 
         </main>
     )

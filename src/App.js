@@ -6,12 +6,14 @@ import Image from './components/Image';
 import memesData from './components/memesData.json'
 
 
+
 function App() {
+  
   return (
     <div>
       <Header />
       <Meme />
-      <Image />
+      {/* <Image /> */}
     </div>
   );
 }
